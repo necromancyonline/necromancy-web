@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import './Header.css';
 
 // -> IMPORT COMPONENT <-- \\
@@ -86,7 +85,7 @@ class Header extends Component {
 
   render() {
     return (
-      <header>
+      <header className="header-background">
         <div
           className="header-banner"
           style={{
@@ -119,4 +118,4 @@ class Header extends Component {
   }
 }
 
-export default connect()(Header);
+export default Header;

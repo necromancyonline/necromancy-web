@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import './Patreon.css';
 
 const dropbox = require('./Patreon_images/bg_leftMenu.png');
@@ -30,4 +29,4 @@ class Patreon extends Component {
   }
 }
 
-export default connect()(Patreon);
+export default Patreon;
