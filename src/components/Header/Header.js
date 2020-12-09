@@ -21,7 +21,7 @@ class Header extends Component {
     this.setState({});
   };
   componentDidMount() {
-    this.updateSlide();
+    // this.updateSlide();
     this.handleFade();
     this.setState({
       hasLoaded: true,
@@ -31,7 +31,6 @@ class Header extends Component {
   handleFade = () => {
     setInterval(() => {
       opacityHandler = 1;
-      transitionHandler = 0;
       this.reRender();
     }, 10000);
 
@@ -40,33 +39,36 @@ class Header extends Component {
       if (this.state.hasLoaded === true) {
         interval = 10000;
       } else {
-        interval = 8000;
+        interval = 5000;
       }
       setTimeout(() => {
         opacityHandler = 0;
-        transitionHandler = 2;
+        transitionHandler = 5;
         this.reRender();
+        this.updateSlide();
         opacityTimer();
       }, interval);
     };
     opacityTimer();
   };
   updateSlide = () => {
-    setInterval(() => {
+    // setInterval(() => {
+    setTimeout(() => {
       if (slideNum === 1) {
         slideNum++;
-        slideshowItem = require(`./Header_images/slideshow_${slideNum}.jpg`);
+        // slideshowItem = require(`./Header_images/slideshow_${slideNum}.jpg`);
         nextSlideNum--;
-        nextSlideshowItem = require(`./Header_images/slideshow_${nextSlideNum}.jpg`);
+        // nextSlideshowItem = require(`./Header_images/slideshow_${nextSlideNum}.jpg`);
       } else {
         slideNum--;
-        slideshowItem = require(`./Header_images/slideshow_${slideNum}.jpg`);
+        // slideshowItem = require(`./Header_images/slideshow_${slideNum}.jpg`);
         nextSlideNum++;
-        nextSlideshowItem = require(`./Header_images/slideshow_${nextSlideNum}.jpg`);
+        // nextSlideshowItem = require(`./Header_images/slideshow_${nextSlideNum}.jpg`);
       }
       this.reRender();
       console.log('slide');
-    }, 10000);
+    }, 5000);
+    // }, 10000);
   };
 
   render() {
