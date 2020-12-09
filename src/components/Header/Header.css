@@ -59,13 +59,12 @@
 
 .header-logo {
   padding-top: 200px;
-  height: 150px;
   width: auto;
   position: absolute;
   color: #222222;
   z-index: 10001;
-  margin-left: auto;
-  margin-right: auto;
+  min-width: 1300px;
+  width: 100%;
   display: block;
   top: 0;
   left: 0;
@@ -88,9 +87,6 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-color: black;
-}
-
-video {
   object-fit: fill;
 }
 
@@ -98,4 +94,9 @@ video {
   width: 100%;
   min-width: 1300px;
   background-color: black;
+}
+
+.banner-logo {
+  margin-left: auto;
+  margin-right: auto;
 }

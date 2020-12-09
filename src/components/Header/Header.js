@@ -107,7 +107,7 @@ class Header extends Component {
           </div>
         </div>
         <div className="header-logo">
-          <img src={logo} alt="Wizardry-Online"></img>
+          <img className="banner-logo" src={logo} alt="Wizardry-Online"></img>
         </div>
         <div className="header-blur" />
         <div className="App-header">
