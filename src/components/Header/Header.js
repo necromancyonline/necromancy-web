@@ -13,7 +13,6 @@ let nextSlideshowItem = require('./Header_images/slideshow_2.jpg');
 let opacityHandler = 1;
 let transitionHandler = 2;
 let slideNum = 1;
-let nextSlideNum = 2;
 // -> SCOPE VARS <- //
 
 class Header extends Component {
