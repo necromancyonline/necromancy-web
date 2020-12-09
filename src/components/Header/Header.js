@@ -88,12 +88,6 @@ class Header extends Component {
     }, 5000);
   };
 
-  updateSlide = () => {
-    // setInterval(() => {
-    setTimeout(() => {}, 5000);
-    // }, 10000);
-  };
-
   render() {
     console.log(slideshowItem);
     return (
