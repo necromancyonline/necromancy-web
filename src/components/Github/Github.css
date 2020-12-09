@@ -1,4 +1,5 @@
 .github-position-1 {
+  user-select: none;
   position: absolute;
   width: 100%;
   height: 1150px;
@@ -19,6 +20,7 @@
   margin-top: 221px;
 }
 .github-box {
+  user-select: none;
   height: 220px;
   position: absolute;
   color: white;
@@ -27,6 +29,7 @@
   margin-left: 46.1%;
 }
 .github-image {
+  user-select: none;
   position: absolute;
   color: white;
   z-index: 3;
