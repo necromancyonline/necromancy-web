@@ -73,7 +73,7 @@
   bottom: 0;
 }
 
-.header-video {
+.header-banner {
   height: 600px;
   width: 100%;
   background-color: #222222;
@@ -84,6 +84,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  overflow: hidden;
 }
 
 video {
