@@ -76,6 +76,7 @@
 .header-banner {
   height: 600px;
   width: 100%;
+  min-width: 1300px;
   z-index: 100;
   position: absolute;
   display: block;
@@ -95,5 +96,6 @@ video {
 
 .banner-image {
   width: 100%;
+  min-width: 1300px;
   background-color: black;
 }
