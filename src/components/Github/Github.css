@@ -1,20 +1,35 @@
-.github-box {
-  height: 220px;
+.github-position-1 {
   position: absolute;
-  color: white;
-  z-index: 1000;
+  width: 100%;
+  height: 1150px;
   display: block;
-  margin-left: 76.95%;
   top: 0;
   left: 0;
   right: 1;
   bottom: 0;
+}
+
+.github-position-2 {
+  color: white;
+  z-index: 3;
+  height: 200px;
+  width: 45.8%;
+  margin-top: -5px;
+  margin-left: 557px;
   margin-top: 221px;
+}
+.github-box {
+  height: 220px;
+  position: absolute;
+  color: white;
+  z-index: 3;
+  display: block;
+  margin-left: 46.1%;
 }
 .github-image {
   position: absolute;
   color: white;
-  z-index: 1000;
+  z-index: 3;
   display: block;
   width: 234px;
   height: 144px;
@@ -26,23 +41,6 @@
   bottom: 0;
   filter: invert(93%);
   border: #9cb8cf 3px double;
-}
-
-.github-text {
-  position: absolute;
-  color: white;
-  z-index: 1000;
-  display: block;
-  width: 240px;
-  height: 50px;
-  margin-top: 140px;
-  margin-right: 8.5%;
-  top: 0;
-  left: 1;
-  right: 0;
-  bottom: 0;
-  font-weight: bold;
-  color: #fefefec5;
 }
 
 .github-box:hover {

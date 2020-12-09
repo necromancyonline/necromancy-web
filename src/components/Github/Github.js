@@ -18,10 +18,13 @@ class Github extends Component {
 
   render() {
     return (
-      <div className="github-box" onClick={this.onClickLink('github')}>
-        <img src={dropbox} alt="github-box" />
-        <img src={github} alt="github" className="github-image" />
-        {/* <p className="github-text">Click here!</p> */}
+      <div className="github-position-1">
+        <div className="github-position-2">
+          <div className="github-box" onClick={this.onClickLink('github')}>
+            <img src={dropbox} alt="github-box" />
+            <img src={github} alt="github" className="github-image" />
+          </div>
+        </div>
       </div>
     );
   }

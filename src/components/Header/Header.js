@@ -23,7 +23,6 @@ class Header extends Component {
     this.setState({});
   };
   componentDidMount() {
-    // this.updateSlide();
     this.handleFade();
     this.setState({
       hasLoaded: true,

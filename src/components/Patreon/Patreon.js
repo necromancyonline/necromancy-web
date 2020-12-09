@@ -20,10 +20,13 @@ class Patreon extends Component {
 
   render() {
     return (
-      <div className="patreon-box" onClick={this.onClickLink('patreon')}>
-        <img src={dropbox} alt="patreon-box" />
-        <img src={patreon} alt="patreon" className="patreon-image" />
-        {/* <p className="patreon-text">Click here!</p> */}
+      <div className="patreon-position-1">
+        <div className="patreon-position-2">
+          <div className="patreon-box" onClick={this.onClickLink('patreon')}>
+            <img src={dropbox} alt="patreon-box" />
+            <img src={patreon} alt="patreon" className="patreon-image" />
+          </div>
+        </div>
       </div>
     );
   }
