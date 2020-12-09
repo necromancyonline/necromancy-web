@@ -1,0 +1,14 @@
+.discord-box {
+  position: absolute;
+  color: white;
+  background-color: #222222;
+  z-index: 1000;
+  height: 435px;
+  display: block;
+  margin-left: 194px;
+  top: 0;
+  left: 0;
+  right: 1;
+  bottom: 0;
+  border: #69503b 3px double;
+}

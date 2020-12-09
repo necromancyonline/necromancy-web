@@ -1,0 +1,48 @@
+.patreon-box {
+  height: 220px;
+  position: absolute;
+  color: white;
+  z-index: 1000;
+  display: block;
+  margin-right: 10%;
+  top: 0;
+  left: 1;
+  right: 0;
+  bottom: 0;
+}
+.patreon-image {
+  position: absolute;
+  color: white;
+  z-index: 1000;
+  display: block;
+  width: 234px;
+  height: 144px;
+  margin-top: 34px;
+  margin-right: 8.5%;
+  top: 0;
+  left: 1;
+  right: 0;
+  bottom: 0;
+  border: #69503b 3px double;
+}
+
+.patreon-text {
+  position: absolute;
+  color: white;
+  z-index: 1000;
+  display: block;
+  width: 240px;
+  height: 50px;
+  margin-top: 140px;
+  margin-right: 8.5%;
+  top: 0;
+  left: 1;
+  right: 0;
+  bottom: 0;
+  font-weight: bold;
+  color: #fefefec5;
+}
+
+.patreon-box:hover {
+  cursor: pointer;
+}

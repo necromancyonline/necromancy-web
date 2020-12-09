@@ -1,0 +1,50 @@
+.github-box {
+  height: 220px;
+  position: absolute;
+  color: white;
+  z-index: 1000;
+  display: block;
+  margin-right: 10%;
+  top: 0;
+  left: 1;
+  right: 0;
+  bottom: 0;
+  margin-top: 221px;
+}
+.github-image {
+  position: absolute;
+  color: white;
+  z-index: 1000;
+  display: block;
+  width: 234px;
+  height: 144px;
+  margin-top: 34px;
+  margin-right: 8.5%;
+  top: 0;
+  left: 1;
+  right: 0;
+  bottom: 0;
+  filter: invert(93%);
+  border: #9cb8cf 3px double;
+}
+
+.github-text {
+  position: absolute;
+  color: white;
+  z-index: 1000;
+  display: block;
+  width: 240px;
+  height: 50px;
+  margin-top: 140px;
+  margin-right: 8.5%;
+  top: 0;
+  left: 1;
+  right: 0;
+  bottom: 0;
+  font-weight: bold;
+  color: #fefefec5;
+}
+
+.github-box:hover {
+  cursor: pointer;
+}
