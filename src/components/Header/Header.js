@@ -5,7 +5,6 @@ import './Header.css';
 // -> IMPORT COMPONENT <-- \\
 const logo = require('./Header_images/logo.png');
 let slideshowItem = require('./Header_images/slideshow_1.jpg');
-
 // -> IMPORT COMPONENT <-- \\
 
 let slideNum = 1;
