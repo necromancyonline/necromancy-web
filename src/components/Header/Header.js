@@ -63,25 +63,23 @@ class Header extends Component {
       if (opacityHandler === 0) {
         if (slideNum === 3) {
           slideNum = 1;
-          slideshowItem = require(`./Header_images/slideshow_${slideNum}.jpg`);
         } else if (slideNum >= 1) {
           slideNum += 2;
           if (slideNum > 3) {
             slideNum = 1;
           }
-          slideshowItem = require(`./Header_images/slideshow_${slideNum}.jpg`);
         }
+        slideshowItem = require(`./Header_images/slideshow_${slideNum}.jpg`);
       } else {
         if (nextSlideNum === 3) {
           nextSlideNum = 1;
-          nextSlideshowItem = require(`./Header_images/slideshow_${nextSlideNum}.jpg`);
         } else if (nextSlideNum >= 1) {
           nextSlideNum += 2;
           if (nextSlideNum > 3) {
             nextSlideNum = 2;
           }
-          nextSlideshowItem = require(`./Header_images/slideshow_${nextSlideNum}.jpg`);
         }
+        nextSlideshowItem = require(`./Header_images/slideshow_${nextSlideNum}.jpg`);
       }
       console.log('content changed');
       this.reRender();
