@@ -90,3 +90,7 @@
 video {
   object-fit: fill;
 }
+
+.banner-image {
+  width: 100%;
+}

@@ -4,30 +4,41 @@ import './Header.css';
 
 // -> IMPORT COMPONENT <-- \\
 const logo = require('./Header_images/logo.png');
-const slideshowItem = require('./Header_images/slideshow_1.jpg');
+let slideshowItem = require('./Header_images/slideshow_1.jpg');
+
 // -> IMPORT COMPONENT <-- \\
 
+let slideNum = 1;
 class Header extends Component {
-  state = {
-    slideNum: 1,
-  };
+  state = {};
 
+  reRender = () => {
+    this.setState({});
+  };
   componentDidMount() {
     this.updateSlide();
   }
 
   updateSlide = () => {
     setTimeout(() => {
-      console.log('working');
+      if (slideNum === 1) {
+        slideNum++;
+        slideshowItem = require(`./Header_images/slideshow_${slideNum}.jpg`);
+        this.reRender();
+      } else {
+        slideNum--;
+        slideshowItem = require(`./Header_images/slideshow_${slideNum}.jpg`);
+        this.reRender();
+      }
       this.updateSlide();
-    }, 5000);
+    }, 10000);
   };
   render() {
     return (
       <header>
         <div className="header-banner">
           <div>
-            <img src={slideshowItem} />
+            <img className="banner-image" src={slideshowItem} />
           </div>
         </div>
         <div className="header-logo">
