@@ -35,6 +35,7 @@ class Header extends Component {
   handleFade = () => {
     setInterval(() => {
       opacityHandler = 1;
+      this.handleSlideContent();
       this.reRender();
     }, 20000);
 
@@ -49,10 +50,9 @@ class Header extends Component {
       setTimeout(() => {
         opacityHandler = 0;
         transitionHandler = 5;
-        this.reRender();
-        // this.updateSlide();
-        opacityTimer();
         this.handleSlideContent();
+        this.reRender();
+        opacityTimer();
       }, interval);
     };
     opacityTimer();
@@ -64,30 +64,28 @@ class Header extends Component {
         if (slideNum === 3) {
           slideNum = 1;
         } else if (slideNum >= 1) {
-          slideNum += 2;
+          slideNum++;
           if (slideNum > 3) {
             slideNum = 1;
           }
         }
         slideshowItem = require(`./Header_images/slideshow_${slideNum}.jpg`);
       } else {
-        if (nextSlideNum === 3) {
-          nextSlideNum = 1;
-        } else if (nextSlideNum >= 1) {
-          nextSlideNum += 2;
-          if (nextSlideNum > 3) {
-            nextSlideNum = 2;
+        if (slideNum === 3) {
+          slideNum = 1;
+        } else if (slideNum >= 1) {
+          slideNum++;
+          if (slideNum > 3) {
+            slideNum = 1;
           }
         }
-        nextSlideshowItem = require(`./Header_images/slideshow_${nextSlideNum}.jpg`);
+        nextSlideshowItem = require(`./Header_images/slideshow_${slideNum}.jpg`);
       }
-      console.log('content changed');
       this.reRender();
     }, 5000);
   };
 
   render() {
-    console.log(slideshowItem);
     return (
       <header>
         <div
