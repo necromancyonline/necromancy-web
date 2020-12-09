@@ -1,4 +1,5 @@
 .faq-position {
+  z-index: 1000;
   position: absolute;
   width: 100%;
   height: 1150px;
