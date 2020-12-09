@@ -12,6 +12,9 @@ class Patreon extends Component {
         window.open(
           'https://www.patreon.com/NecromancyOnline?fbclid=IwAR0_2ZOeBqtsaWrYaTJt2KiByjKJ4cBr5JYSgVoQ9oFu87QVQtvgYFmu2tc'
         );
+        break;
+      default:
+        return;
     }
   };
   componentDidMount() {}

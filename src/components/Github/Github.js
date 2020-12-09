@@ -10,6 +10,9 @@ class Github extends Component {
     switch (link) {
       case 'github':
         window.open('https://github.com/necromancyonline');
+        break;
+      default:
+        return;
     }
   };
   componentDidMount() {}

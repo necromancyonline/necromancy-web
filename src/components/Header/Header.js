@@ -107,6 +107,7 @@ class Header extends Component {
           <div>
             <img
               className="banner-image"
+              alt="Wizardry Online Anime Style"
               src={slideshowItem}
               style={{
                 opacity: opacityHandler,
