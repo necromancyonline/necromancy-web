@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import './Faq.css';
 
 class Faq extends Component {
@@ -120,4 +119,4 @@ class Faq extends Component {
   }
 }
 
-export default connect()(Faq);
+export default Faq;
