@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import './Github.css';
 
 const dropbox = require('./Github_images/bg_leftMenu.png');
@@ -10,6 +9,9 @@ class Github extends Component {
     switch (link) {
       case 'github':
         window.open('https://github.com/necromancyonline');
+        break;
+      default:
+        return;
     }
   };
   componentDidMount() {}
@@ -25,4 +27,4 @@ class Github extends Component {
   }
 }
 
-export default connect()(Github);
+export default Github;

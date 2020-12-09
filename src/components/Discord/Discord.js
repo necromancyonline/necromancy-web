@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import './Discord.css';
 
 class Discord extends Component {
@@ -23,4 +22,4 @@ class Discord extends Component {
   }
 }
 
-export default connect()(Discord);
+export default Discord;

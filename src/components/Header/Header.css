@@ -59,13 +59,12 @@
 
 .header-logo {
   padding-top: 200px;
-  height: 150px;
   width: auto;
   position: absolute;
   color: #222222;
   z-index: 10001;
-  margin-left: auto;
-  margin-right: auto;
+  min-width: 1300px;
+  width: 100%;
   display: block;
   top: 0;
   left: 0;
@@ -76,7 +75,7 @@
 .header-banner {
   height: 600px;
   width: 100%;
-  background-color: #222222;
+  min-width: 1300px;
   z-index: 100;
   position: absolute;
   display: block;
@@ -85,8 +84,23 @@
   right: 0;
   bottom: 0;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: black;
+  object-fit: fill;
 }
 
-video {
-  object-fit: fill;
+.banner-image {
+  width: 100%;
+  min-width: 1300px;
+  background-color: black;
+}
+
+.banner-logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-banner {
+  background-color: black;
 }

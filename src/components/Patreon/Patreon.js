@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import './Patreon.css';
 
 const dropbox = require('./Patreon_images/bg_leftMenu.png');
@@ -12,6 +11,9 @@ class Patreon extends Component {
         window.open(
           'https://www.patreon.com/NecromancyOnline?fbclid=IwAR0_2ZOeBqtsaWrYaTJt2KiByjKJ4cBr5JYSgVoQ9oFu87QVQtvgYFmu2tc'
         );
+        break;
+      default:
+        return;
     }
   };
   componentDidMount() {}
@@ -27,4 +29,4 @@ class Patreon extends Component {
   }
 }
 
-export default connect()(Patreon);
+export default Patreon;
