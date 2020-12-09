@@ -8,10 +8,14 @@ let slideshowItem = require('./Header_images/slideshow_1.jpg');
 let nextSlideshowItem = require('./Header_images/slideshow_2.jpg');
 
 // -> IMPORT COMPONENT <-- \\
+
+// -> SCOPE VARS <- //
 let opacityHandler = 1;
 let transitionHandler = 2;
 let slideNum = 1;
 let nextSlideNum = 2;
+// -> SCOPE VARS <- //
+
 class Header extends Component {
   state = {
     hasLoaded: false,
@@ -32,42 +36,61 @@ class Header extends Component {
     setInterval(() => {
       opacityHandler = 1;
       this.reRender();
-    }, 10000);
+    }, 20000);
 
     const opacityTimer = () => {
       let interval;
+
       if (this.state.hasLoaded === true) {
-        interval = 10000;
+        interval = 20000;
       } else {
-        interval = 5000;
+        interval = 10000;
       }
       setTimeout(() => {
         opacityHandler = 0;
         transitionHandler = 5;
         this.reRender();
-        this.updateSlide();
+        // this.updateSlide();
         opacityTimer();
+        this.handleSlideContent();
       }, interval);
     };
     opacityTimer();
   };
+
+  handleSlideContent = () => {
+    setTimeout(() => {
+      if (opacityHandler === 0) {
+        if (slideNum === 3) {
+          slideNum = 1;
+          slideshowItem = require(`./Header_images/slideshow_${slideNum}.jpg`);
+        } else if (slideNum >= 1) {
+          slideNum += 2;
+          if (slideNum > 3) {
+            slideNum = 1;
+          }
+          slideshowItem = require(`./Header_images/slideshow_${slideNum}.jpg`);
+        }
+      } else {
+        if (nextSlideNum === 3) {
+          nextSlideNum = 1;
+          nextSlideshowItem = require(`./Header_images/slideshow_${nextSlideNum}.jpg`);
+        } else if (nextSlideNum >= 1) {
+          nextSlideNum += 2;
+          if (nextSlideNum > 3) {
+            nextSlideNum = 2;
+          }
+          nextSlideshowItem = require(`./Header_images/slideshow_${nextSlideNum}.jpg`);
+        }
+      }
+      console.log('content changed');
+      this.reRender();
+    }, 5000);
+  };
+
   updateSlide = () => {
     // setInterval(() => {
-    setTimeout(() => {
-      if (slideNum === 1) {
-        slideNum++;
-        // slideshowItem = require(`./Header_images/slideshow_${slideNum}.jpg`);
-        nextSlideNum--;
-        // nextSlideshowItem = require(`./Header_images/slideshow_${nextSlideNum}.jpg`);
-      } else {
-        slideNum--;
-        // slideshowItem = require(`./Header_images/slideshow_${slideNum}.jpg`);
-        nextSlideNum++;
-        // nextSlideshowItem = require(`./Header_images/slideshow_${nextSlideNum}.jpg`);
-      }
-      this.reRender();
-      console.log('slide');
-    }, 5000);
+    setTimeout(() => {}, 5000);
     // }, 10000);
   };
 
