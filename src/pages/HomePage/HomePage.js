@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 
 // -> IMPORT COMPONENT <- \\
 import backgroundIMG from '../../components/App/App_public/bg_body.jpg';
@@ -27,8 +26,4 @@ class HomePage extends Component {
   }
 }
 
-const mapStoreToProps = (store) => ({
-  store,
-});
-
-export default connect(mapStoreToProps)(HomePage);
+export default HomePage;

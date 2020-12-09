@@ -37,7 +37,11 @@ class Header extends Component {
       <header>
         <div className="header-banner">
           <div>
-            <img className="banner-image" src={slideshowItem} />
+            <img
+              className="banner-image"
+              alt="Wizardry-Online-Anime-Style"
+              src={slideshowItem}
+            />
           </div>
         </div>
         <div className="header-logo">
