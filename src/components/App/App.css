@@ -23,6 +23,8 @@ ul {
 }
 .App {
   text-align: center;
+  position: absolute;
+  width: 100%;
 }
 
 .App-title {

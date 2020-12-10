@@ -5,7 +5,6 @@ import './Header.css';
 const logo = require('./Header_images/logo.png');
 let slideshowItem = require('./Header_images/slideshow_1.jpg');
 let nextSlideshowItem = require('./Header_images/slideshow_2.jpg');
-
 // -> IMPORT COMPONENT <-- \\
 
 // -> SCOPE VARS <- //
@@ -84,16 +83,16 @@ class Header extends Component {
 
   render() {
     return (
-      <header className="header-background">
+      <div className="header">
         <div
-          className="header-banner"
+          className="banner-back-image"
           style={{
             backgroundImage: `url( ${nextSlideshowItem})`,
           }}
         >
           <div>
             <img
-              className="banner-image"
+              className="banner-front-image"
               alt="Wizardry Online Anime Style"
               src={slideshowItem}
               style={{
@@ -103,16 +102,20 @@ class Header extends Component {
             />
           </div>
         </div>
-        <div className="header-logo">
-          <img className="banner-logo" src={logo} alt="Wizardry-Online"></img>
+        <div className="banner-logo-box">
+          <img
+            className="banner-logo-image"
+            src={logo}
+            alt="Wizardry-Online"
+          ></img>
         </div>
-        <div className="header-blur" />
-        <div className="App-header">
+        {/* <div className="header-blur" /> */}
+        <div className="header-nav-box">
           <nav className="header-nav">
             <div className="header-block"></div>
           </nav>
-        </div>{' '}
-      </header>
+        </div>
+      </div>
     );
   }
 }
