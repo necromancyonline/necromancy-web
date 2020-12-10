@@ -82,7 +82,7 @@ class Header extends Component {
   };
 
   render() {
-    // console.log(slideNum, slideshowItem, nextSlideshowItem);
+    // console.log(slideNum, slideshowItem, nextSlideshowItem); // to watch how slide show changes
     return (
       <div className="header">
         <div
