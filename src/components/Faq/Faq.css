@@ -7,7 +7,6 @@
 .faq-box {
   color: white;
   /* background-color: #222222; */
-  z-index: 9;
   border: #69503b 3px double;
   margin-top: -5px;
 }
