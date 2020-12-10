@@ -12,10 +12,19 @@ class HomePage extends Component {
     return (
       <div className="homepage-body">
         <div className="homepage-body-content">
-          <Discord />
-          <Patreon />
-          <Faq />
-          <Github />
+          <div className="homepage-center">
+            <div className="homepage-discord">
+              <Discord />
+            </div>
+            <div className="homepage-faq">
+              <Faq />
+            </div>
+            <div className="homepage-links">
+              <Patreon />
+              <Github />
+            </div>
+            <div className="homepage-spacer" />
+          </div>
         </div>
       </div>
     );

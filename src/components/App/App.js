@@ -11,8 +11,6 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 // -> IMPORT COMPONENTS <-- \\
 
-import backgroundIMG from '../../components/App/App_public/bg_body.jpg';
-
 class App extends Component {
   componentDidMount() {}
 
@@ -20,9 +18,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="background-site">
-          <img src={backgroundIMG} alt="background-for-site" />
-        </div>
+        <div className="background-site" />
         <div className="App">
           <Header />
           <main>
