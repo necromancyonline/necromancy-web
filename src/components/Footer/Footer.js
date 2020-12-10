@@ -7,7 +7,7 @@ class Footer extends Component {
   render() {
     return (
       <footer className="footer-box">
-        <div className="header-blur" />
+        {/* <div className="header-blur" /> */}
         <div className="App-footer"></div>
       </footer>
     );
