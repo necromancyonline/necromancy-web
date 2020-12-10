@@ -14,8 +14,6 @@ let slideNum = 1;
 
 // -> SCOPE VARS <- //
 
-let slideshowItem = require('./Header_images/slideshow_1.jpg');
-
 class Header extends Component {
   state = {
     hasLoaded: false,
