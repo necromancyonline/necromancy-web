@@ -45,7 +45,7 @@ class Header extends Component {
       }
       setTimeout(() => {
         opacityHandler = 0;
-        transitionHandler = 5;
+        transitionHandler = 3;
         this.handleSlideContent();
         this.reRender();
         opacityTimer();
@@ -82,6 +82,7 @@ class Header extends Component {
   };
 
   render() {
+    // console.log(slideNum, slideshowItem, nextSlideshowItem);
     return (
       <div className="header">
         <div
@@ -109,7 +110,6 @@ class Header extends Component {
             alt="Wizardry-Online"
           ></img>
         </div>
-        {/* <div className="header-blur" /> */}
         <div className="header-nav-box">
           <nav className="header-nav">
             <div className="header-block"></div>
