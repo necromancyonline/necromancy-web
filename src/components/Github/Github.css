@@ -12,27 +12,26 @@
 
 .github-position-2 {
   color: white;
-  z-index: 3;
+  z-index: 11;
   height: 200px;
-  width: 45.8%;
   margin-top: -5px;
-  margin-left: 557px;
   margin-top: 221px;
+  margin-left: 57.6%;
 }
 .github-box {
   user-select: none;
   height: 220px;
   position: absolute;
   color: white;
-  z-index: 3;
+  z-index: 11;
   display: block;
-  margin-left: 46.1%;
+  margin-left: 365px;
 }
 .github-image {
   user-select: none;
   position: absolute;
   color: white;
-  z-index: 3;
+  z-index: 11;
   display: block;
   width: 234px;
   height: 144px;

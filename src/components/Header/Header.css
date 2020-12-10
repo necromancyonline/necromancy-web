@@ -40,9 +40,9 @@
 }
 
 .header-nav-box {
+  position: absolute;
   width: 100%;
   background-image: url('./Header_images/header-menu.png');
   height: 108px;
   z-index: 1000;
-  background-color: #00000030;
 }
