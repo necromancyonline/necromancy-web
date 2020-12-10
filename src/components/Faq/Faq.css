@@ -1,29 +1,14 @@
 .faq-position-1 {
-  z-index: 1000;
-  position: absolute;
+  display: inline-block;
   width: 100%;
   height: 1150px;
-  display: block;
-  top: 0;
-  left: 0;
-  right: 1;
-  bottom: 0;
 }
 
-.faq-position-2 {
-  z-index: 11;
-  height: 200px;
-  width: 100%;
-  margin-left: 5%;
-}
 .faq-box {
   color: white;
   /* background-color: #222222; */
-  z-index: 9;
-  width: 52.6%;
   border: #69503b 3px double;
   margin-top: -5px;
-  margin-left: 360px;
 }
 
 .faq-content {
