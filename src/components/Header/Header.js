@@ -1,27 +1,48 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import './Header.css';
 
 // -> IMPORT COMPONENT <-- \\
 const logo = require('./Header_images/logo.png');
-//const video = require('./Header_images/wizon-header-video.mp4');
-//const audio = require('./Header_images/momento.mp3');
 // -> IMPORT COMPONENT <-- \\
 
+let slideNum = 1;
+let slideshowItem = require('./Header_images/slideshow_1.jpg');
+
 class Header extends Component {
+  state = {};
+
+  reRender = () => {
+    this.setState({});
+  };
+  componentDidMount() {
+    this.updateSlide();
+  }
+
+  updateSlide = () => {
+    setTimeout(() => {
+      if (slideNum === 1) {
+        slideNum++;
+        slideshowItem = require(`./Header_images/slideshow_${slideNum}.jpg`);
+        this.reRender();
+      } else {
+        slideNum--;
+        slideshowItem = require(`./Header_images/slideshow_${slideNum}.jpg`);
+        this.reRender();
+      }
+      this.updateSlide();
+    }, 10000);
+  };
   render() {
     return (
       <header>
-        <div className="header-video">
-          <video
-            className="header-video"
-            autoPlay
-            loop
-            src={null}
-            type="video/mp4"
-            muted
-            playsInline
-          />
+        <div className="header-banner">
+          <div>
+            <img
+              className="banner-image"
+              alt="Wizardry-Online-Anime-Style"
+              src={slideshowItem}
+            />
+          </div>
         </div>
         <div className="header-logo">
           <img src={logo} alt="Wizardry-Online"></img>
@@ -29,11 +50,7 @@ class Header extends Component {
         <div className="header-blur" />
         <div className="App-header">
           <nav className="header-nav">
-            <div className="header-block">
-              <audio autoPlay="autoPlay" loop muted>
-                <source src={null} />
-              </audio>
-            </div>
+            <div className="header-block"></div>
           </nav>
         </div>
       </header>
@@ -41,4 +58,4 @@ class Header extends Component {
   }
 }
 
-export default connect()(Header);
+export default Header;

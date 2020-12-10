@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
-import { connect } from 'react-redux';
 import './App.css';
 
 // -> IMPORT PAGES <-- \\
@@ -31,4 +30,4 @@ class App extends Component {
   }
 }
 
-export default connect()(App);
+export default App;
