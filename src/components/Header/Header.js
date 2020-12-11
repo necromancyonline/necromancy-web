@@ -57,21 +57,21 @@ class Header extends Component {
   handleSlideContent = () => {
     setTimeout(() => {
       if (opacityHandler === 0) {
-        if (slideNum === 3) {
+        if (slideNum === 4) {
           slideNum = 1;
         } else if (slideNum >= 1) {
           slideNum++;
-          if (slideNum > 3) {
+          if (slideNum > 4) {
             slideNum = 1;
           }
         }
         slideshowItem = require(`./Header_images/slideshow_${slideNum}.jpg`);
       } else {
-        if (slideNum === 3) {
+        if (slideNum === 4) {
           slideNum = 1;
         } else if (slideNum >= 1) {
           slideNum++;
-          if (slideNum > 3) {
+          if (slideNum > 4) {
             slideNum = 1;
           }
         }

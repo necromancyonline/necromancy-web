@@ -21,6 +21,10 @@ ul {
   list-style: none;
   padding: 0;
 }
+
+a {
+  color: #00c3ffd0;
+}
 .App {
   text-align: center;
   position: absolute;
@@ -49,13 +53,6 @@ ul {
   padding-top: 100px;
 }
 
-.homepage-body {
-  margin-top: -33px;
-  width: 100%;
-  height: 1400px;
-  color: #ffffff;
-}
-
 .background-site {
   width: 100%;
   height: 100%;
@@ -67,42 +64,4 @@ ul {
   background-color: #111111;
   z-index: 0;
   position: fixed;
-}
-
-.homepage-body-content {
-  align-content: center;
-  position: absolute;
-  width: 100%;
-  height: auto;
-  z-index: 10;
-}
-
-.homepage-center {
-  display: inline-flex;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.homepage-discord {
-  margin-top: -15px;
-  width: 16%;
-  min-width: 350px;
-  height: 100%;
-  text-align: right;
-}
-.homepage-faq {
-  align-self: center;
-  margin-left: 12px;
-  width: 60%;
-  height: 100%;
-}
-.homepage-links {
-  width: 16%;
-  height: 100%;
-}
-
-.homepage-spacer {
-  width: 4%;
-  height: 100%;
 }

@@ -2,6 +2,8 @@
   position: absolute;
   width: 100%;
   background-image: url('./Footer_images/bg_footer.jpg');
+  background-size: 100% 220px;
+  background-repeat: no-repeat;
   height: 220px;
   color: white;
   z-index: 10000;
