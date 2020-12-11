@@ -86,8 +86,9 @@ ul {
 
 .homepage-discord {
   margin-left: 75px;
-  width: 350px;
+  width: 20%;
   height: 100%;
+  text-align: right;
 }
 .homepage-faq {
   align-self: center;

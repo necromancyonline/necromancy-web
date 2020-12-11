@@ -13,6 +13,7 @@ class HomePage extends Component {
       <div className="homepage-body">
         <div className="homepage-body-content">
           <div className="homepage-center">
+            <div className="homepage-spacer" />
             <div className="homepage-discord">
               <Discord />
             </div>
