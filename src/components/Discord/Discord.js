@@ -12,7 +12,7 @@ class Discord extends Component {
           title="Discord"
           src={process.env.REACT_APP_DISCORD_KEY}
           width="350"
-          height="435"
+          height="528"
           allowtransparency="true"
           frameBorder="0"
           sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"

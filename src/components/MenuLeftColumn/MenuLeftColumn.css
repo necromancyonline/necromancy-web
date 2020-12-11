@@ -1,0 +1,10 @@
+.menu-lc-align {
+  width: 400px;
+  margin-left: auto;
+}
+.menu-lc-image {
+  margin-left: auto;
+  background-image: url('./MenuLeftColumn_images/menu_leftCol.png');
+  background-repeat: no-repeat;
+  height: 1217px;
+}
