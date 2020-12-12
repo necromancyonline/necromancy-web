@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Patreon from '../Patreon/Patreon';
 import './Footer.css';
 
 const github = require('./Footer_images/GitHubLogo.png');
@@ -29,6 +28,7 @@ class Footer extends Component {
             <div className="footer-link-item">
               <img
                 className="footer-link-img"
+                alt="github"
                 src={github}
                 onClick={this.onClickLink('github')}
               />
@@ -36,6 +36,7 @@ class Footer extends Component {
             <div className="footer-link-item">
               <img
                 className="footer-link-img"
+                alt="patreon"
                 src={patreon}
                 onClick={this.onClickLink('patreon')}
               />

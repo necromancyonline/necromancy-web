@@ -1,0 +1,23 @@
+.menu-rc-align {
+  margin-top: -20px;
+  margin-left: 15px;
+  height: 100%;
+  width: 100%;
+}
+.menu-rc-image {
+  background-image: url('./MenuRightColumn_images/menu_rightCol.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 200px;
+  width: 300px;
+}
+
+.menu-rc-item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  margin-left: 16px;
+  margin-top: 44px;
+  height: 141px;
+  width: 268px;
+}
