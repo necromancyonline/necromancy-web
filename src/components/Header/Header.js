@@ -11,19 +11,37 @@ let nextSlideshowItem = require('./Header_images/slideshow_2.jpg');
 let opacityHandler = 1;
 let transitionHandler = 2;
 let slideNum = 1;
+const totalSlides = 4;
 // -> SCOPE VARS <- //
+
+// -> NAV BAR VARS <-//
+let positioner = 'absolute';
+let offSetter = '0px';
+// -> NAV BAR VARS <-//
 
 class Header extends Component {
   state = {
     hasLoaded: false,
+    navNeedsUpdate: false,
   };
 
   reRender = () => {
-    this.setState({});
+    this.setState({
+      ...this.state,
+    });
   };
+
+  navBarRender = (boolean) => {
+    this.setState({
+      ...this.state,
+      navNeedsUpdate: boolean,
+    });
+  };
+
   componentDidMount() {
     this.handleFade();
     this.setState({
+      ...this.state,
       hasLoaded: true,
     });
   }
@@ -57,21 +75,21 @@ class Header extends Component {
   handleSlideContent = () => {
     setTimeout(() => {
       if (opacityHandler === 0) {
-        if (slideNum === 4) {
+        if (slideNum === totalSlides) {
           slideNum = 1;
         } else if (slideNum >= 1) {
           slideNum++;
-          if (slideNum > 4) {
+          if (slideNum > totalSlides) {
             slideNum = 1;
           }
         }
         slideshowItem = require(`./Header_images/slideshow_${slideNum}.jpg`);
       } else {
-        if (slideNum === 4) {
+        if (slideNum === totalSlides) {
           slideNum = 1;
         } else if (slideNum >= 1) {
           slideNum++;
-          if (slideNum > 4) {
+          if (slideNum > totalSlides) {
             slideNum = 1;
           }
         }
@@ -87,6 +105,26 @@ class Header extends Component {
     //   `FRONT: ${slideshowItem}`,
     //   `BACK: ${nextSlideshowItem}`
     // ); // to watch how slide show changes
+
+    window.onscroll = function () {
+      updateNavBar();
+    };
+
+    const updateNavBar = () => {
+      if (this.state.navNeedsUpdate === false) {
+        if (window.pageYOffset >= 600) {
+          positioner = 'fixed';
+          offSetter = '-600px';
+          this.navBarRender(true);
+        }
+      } else {
+        if (window.pageYOffset <= 600) {
+          positioner = 'absolute';
+          offSetter = '0px';
+          this.navBarRender(false);
+        }
+      }
+    };
     return (
       <div className="header">
         <div
@@ -114,7 +152,10 @@ class Header extends Component {
             alt="Wizardry-Online"
           ></img>
         </div>
-        <div className="header-nav-box">
+        <div
+          className="header-nav-box"
+          style={{ position: positioner, marginTop: offSetter }}
+        >
           <nav className="header-nav">
             <div className="header-block"></div>
           </nav>
