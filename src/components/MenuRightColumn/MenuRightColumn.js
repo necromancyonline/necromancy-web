@@ -75,6 +75,7 @@ class MenuLeftColumn extends Component {
             <img
               className="menu-rc-gif"
               src={MRC1_GIF}
+              alt="reference to video"
               onClick={this.onClickLink('1')}
             />
           </div>
@@ -89,6 +90,7 @@ class MenuLeftColumn extends Component {
             <img
               className="menu-rc-gif"
               src={MRC2_GIF}
+              alt="reference to video"
               onClick={this.onClickLink('2')}
             />
           </div>
@@ -100,10 +102,10 @@ class MenuLeftColumn extends Component {
               backgroundImage: `url(${MRC3})`,
             }}
           >
-            {' '}
             <img
               className="menu-rc-gif"
               src={MRC3_GIF}
+              alt="reference to video"
               onClick={this.onClickLink('3')}
             />
           </div>
@@ -118,6 +120,7 @@ class MenuLeftColumn extends Component {
             <img
               className="menu-rc-gif"
               src={MRC4_GIF}
+              alt="reference to video"
               onClick={this.onClickLink('4')}
             />
           </div>
@@ -132,6 +135,7 @@ class MenuLeftColumn extends Component {
             <img
               className="menu-rc-gif"
               src={MRC5_GIF}
+              alt="reference to video"
               onClick={this.onClickLink('5')}
             />
           </div>
@@ -146,6 +150,7 @@ class MenuLeftColumn extends Component {
             <img
               className="menu-rc-gif"
               src={MRC6_GIF}
+              alt="reference to video"
               onClick={this.onClickLink('6')}
             />
           </div>
