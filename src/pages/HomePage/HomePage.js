@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 
 // -> IMPORT COMPONENT <- \\
 import MenuLeftColumn from '../../components/MenuLeftColumn/MenuLeftColumn';
-import Patreon from '../../components/Patreon/Patreon';
+import MenuRightColumn from '../../components/MenuRightColumn/MenuRightColumn';
 import Faq from '../../components/Faq/Faq';
-import Github from '../../components/Github/Github';
 // -> IMPORT COMPONENT <- \\
 
 import './HomePage.css';
@@ -22,9 +21,8 @@ class HomePage extends Component {
             <div className="homepage-faq">
               <Faq />
             </div>
-            <div className="homepage-links">
-              <Patreon />
-              <Github />
+            <div className="homepage-right-column">
+              <MenuRightColumn />
             </div>
             <div className="homepage-spacer" />
           </div>
