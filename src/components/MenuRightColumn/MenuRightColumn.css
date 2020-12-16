@@ -5,6 +5,7 @@
   width: 100%;
 }
 .menu-rc-image {
+  margin: -2px;
   background-image: url('./MenuRightColumn_images/menu_rightCol.png');
   background-repeat: no-repeat;
   background-size: contain;
