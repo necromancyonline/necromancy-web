@@ -31,14 +31,14 @@ class Faq extends Component {
                   player-base as whole as possible.
                 </p>
               </li>
-              <li>
+              {/* <li>
                 <h3>Can I play this game solo?</h3>
                 <p>
                   Yes, you can. If you decide that multiplayer isn't for you
                   then you can download the server and host it locally and play
                   that way.
                 </p>
-              </li>
+              </li> */}
               <li>
                 <h3>Will it cost money to play when the server is hosted?</h3>
                 <p>
@@ -87,7 +87,7 @@ class Faq extends Component {
                   Instructions for set up will also be found there.
                 </p>
               </li>
-              <li>
+              {/* <li>
                 <h3>How do I report a bug?</h3>
                 <p>
                   We prefer you to report a bug Here:{' '}
@@ -100,7 +100,7 @@ class Faq extends Component {
                   (Click on the New Issue button and describe the problem and we
                   will try to get on it as soon as possible).
                 </p>
-              </li>
+              </li> */}
               <li>
                 <h3>When will this be playable?</h3>
                 <p>

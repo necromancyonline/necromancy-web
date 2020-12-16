@@ -1,8 +1,8 @@
 .App-footer {
   width: 100%;
   background-image: url('./Footer_images/bg_footer.jpg');
-  background-size: 100% 250px;
-  background-repeat: no-repeat;
+  background-size: 2000px 250px;
+  background-repeat: repeat-x;
   height: 250px;
   color: white;
   text-align: left;
